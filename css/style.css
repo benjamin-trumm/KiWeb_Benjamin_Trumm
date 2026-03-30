@@ -23,14 +23,17 @@ body{
     font-family: "Roboto Mono", monospace;
 }
 
-/* Header Styles */
+/*--------------------------------------
+Header Styles
+--------------------------------------*/
+
+/* Header styles */
 header {
     width: 100%;
     padding: 0 5%;
 }
 
 /* Hero Styles */
-
 .hero {
     position: relative;
     width: 100%;
@@ -38,7 +41,6 @@ header {
 }
 
 /* Menu Button Styles */
-
 .menu-button {
     position: absolute;
     top: 20px;
@@ -64,7 +66,6 @@ header {
 }
 
 /* hero title */
-
 .hero-title {
     position: absolute;
     left: 24px;
@@ -74,8 +75,8 @@ header {
     color: #fff;
     z-index: 1;
 }
-/* hero image */
 
+/* hero image */
 .hero-img {
     width: 100%;
     height: 100%;
@@ -104,7 +105,7 @@ header {
 }
 
 /*--------------------------------------
-Main Content Styles 
+Main Styles 
 --------------------------------------*/
 
 /* Main styles */
@@ -113,13 +114,48 @@ main {
     padding: 50px 5%;
 }
 
-/* Projektdaten Dropdown styles */
 
-.projektdaten {
-    width: 100%;
+/* Projektdaten Dropdown styles  TEST */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-/* Detail Image Styles */
+.dropbtn {
+  background-color: #aaaaaa;
+  color: white;
+  padding: 20px
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Klasse zum Anzeigen */
+.show {
+  display: block;
+}
+/* Projektdaten Dropdown styles  TEST-ENDE */
+
+
+/* Seitenschnitt Image Styles */
 .seitenschnitt-image {
     position: relative;
     width: 100%;
@@ -133,15 +169,10 @@ main {
     display: block;
 }
 
+
 .autrium {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-
-
-@media {
-    
 }
