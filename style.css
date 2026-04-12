@@ -42,6 +42,8 @@ body {
     transform: translate(-50%, -50%);
     font-size: 13pt;
     writing-mode: sideways-lr;
+    color: inherit;
+    text-decoration: none;
 }
 
 /*----------------------------------
@@ -223,6 +225,13 @@ footer {
     position: relative;
     margin-top: 80px;
 }
+.footerbox_wrapper_sticky {
+    position: fixed;
+    left: 4%;
+    right: 4%;
+    bottom: 0;
+    margin-top: 0;
+}
 
 .footerbox {
     width: 100%;
@@ -245,4 +254,15 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* about.html */
+
+.about_menu {
+    padding-top: 20%;
+    font-size: 32px;
+}
+
+.about_menu p {
+    line-height: calc(1em + 30px);
 }
