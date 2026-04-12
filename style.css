@@ -1,0 +1,248 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Datatype:wght@100..900&family=Lilita+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Settings whole Website */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+}
+
+.pool_logo_link {
+    position: fixed;
+    top: 10px;
+    left: calc(4% + 10px);
+    display: block;
+    z-index: 999;
+}
+
+.pool_logo {
+    max-width: 15%;
+    width: 15%;
+    height: auto;
+    display: block;
+}
+
+.about {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 13pt;
+    writing-mode: sideways-lr;
+}
+
+/*----------------------------------
+Header
+----------------------------------*/
+header {
+    padding:0 4%;
+}
+
+.hero-title {
+    position: absolute;
+    display: flex;
+    padding-left: 24px;
+    bottom: 24px;
+    font-size: 48px;
+    color: #000000;
+    writing-mode: sideways-lr;
+}
+
+.intro_img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.lines_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lines_item {
+    height: 100px;
+    width: 2px;
+    background-color: black;
+}
+
+.lines_item:nth-child(even) {
+    height: 75px;
+}
+
+/*----------------------------------
+Main
+----------------------------------*/
+main {
+    padding: 0 4%;
+}
+
+/* --------- Box 1 --------- */
+.box1_img {
+    width:100%;
+    height: 100vh;
+    display: block;
+    padding-top: 80px;
+}
+
+.box1_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    width: 150px;
+    height: 50px;
+    margin-top: 650px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------- Box 2 --------- */
+.box2_img {
+    width:100%;
+    height: 100vh;
+    display: block;
+    padding-top: 40px;
+}
+
+.box2_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    width: 150px;
+    height: 50px;
+    margin-top: 650px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------- Box 3 --------- */
+.box3_img {
+    width:100%;
+    height: 100vh;
+    display: block;
+    padding-top: 40px;
+}
+
+.box3_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    width: 150px;
+    height: 50px;
+    margin-top: 650px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+/* --------- Box 4 --------- */
+.box4_img {
+    width:100%;
+    height: 100vh;
+    display: block;
+    padding-top: 40px;
+    border-color: rgb(233, 1, 1);
+}
+
+.box4_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    width: 150px;
+    height: 50px;
+    margin-top: 650px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*----------------------------------
+Footer
+----------------------------------*/
+footer {
+    padding: 0 4%;
+}
+
+.footerbox_wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+
+.footerbox {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+}
+
+.pool_bottom_link {
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: block;
+}
+
+.pool_bottom {
+    width: 100%;
+    height: auto;
+    display: block;
+}
