@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: "Saira", sans-serif;
+  color: rgb(37, 37, 37);
 }
 
 .pool_logo_link {
@@ -30,6 +31,7 @@ body {
     width: 15%;
     height: auto;
     display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.18));
 }
 
 .about {
@@ -37,10 +39,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 50%;
+    top: 33.33%;
     left: 98%;
     transform: translate(-50%, -50%);
-    font-size: 13pt;
+    font-size: 16pt;
+    writing-mode: sideways-lr;
+    color: inherit;
+    text-decoration: none;
+}
+
+.impressum {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 66.66%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 16pt;
     writing-mode: sideways-lr;
     color: inherit;
     text-decoration: none;
@@ -59,7 +75,6 @@ header {
     padding-left: 24px;
     bottom: 24px;
     font-size: 48px;
-    color: #000000;
     writing-mode: sideways-lr;
 }
 
@@ -67,7 +82,20 @@ header {
     width: 100%;
     height: 100vh;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro_text {
+    width: 50vw;
+    padding-top: 0;
+    font-size: 13pt;
+    text-align: left;
+}
+.intro_text p {
+    line-height: 1.2;
+    width: 50%;
 }
 
 .lines_wrapper {
@@ -98,6 +126,8 @@ main {
     height: 100vh;
     display: block;
     padding-top: 80px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .box1_wrapper {
@@ -128,6 +158,8 @@ main {
     height: 100vh;
     display: block;
     padding-top: 40px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .box2_wrapper {
@@ -158,6 +190,8 @@ main {
     height: 100vh;
     display: block;
     padding-top: 40px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .box3_wrapper {
@@ -190,6 +224,8 @@ main {
     display: block;
     padding-top: 40px;
     border-color: rgb(233, 1, 1);
+    object-fit: cover;
+    object-position: center;
 }
 
 .box4_wrapper {
@@ -256,8 +292,26 @@ footer {
     display: block;
 }
 
-/* about.html */
 
+
+/*----------------------------------
+Unterseiten
+----------------------------------*/
+
+/* Allgemeine Eisntellung für Headerbilder */
+
+.header_unterseiten {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 40px;
+}
+
+/*----------------------------------
+ about.html
+ ----------------------------------*/
 .about_menu {
     padding-top: 20%;
     font-size: 32px;
@@ -265,4 +319,108 @@ footer {
 
 .about_menu p {
     line-height: calc(1em + 30px);
+}
+
+/*----------------------------------
+campus_galerie.html
+----------------------------------*/
+.campus_gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    
+}
+
+.campus_gallery_item {
+    overflow: hidden;
+}
+
+.campus_gallery_item--landscape {
+    aspect-ratio: 3 / 2;
+}
+
+.campus_gallery_item--medium {
+    aspect-ratio: 4 / 3;
+}
+
+.campus_gallery_item--portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.campus_gallery_item--squareish {
+    aspect-ratio: 5 / 4;
+}
+
+.campus_gallery_image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*----------------------------------
+projektdaten.html
+----------------------------------*/
+.projektdaten_layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.projektdaten_media_column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.projektdaten_media_image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projektdaten_text_column {
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+}
+
+.projektdaten_text_column h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.projektdaten_text_column p {
+    font-size: 13pt;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+/* Impressum.html */
+.impressum_text {
+    padding-top: 10%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.impressum_text h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.impressum_text p {
+    line-height: 1.4;
+    width: 50%;
+    margin: 0 auto;
 }
